@@ -102,24 +102,5 @@ play = do
   _ <- runCommand $ printf "ffplay -showmode 1 -f f32le -ar %f %s" sampleRate outputFilePath
   return ()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 main :: IO ()
-main = putStrLn "Hello, Haskell!"
+main = play
